@@ -1,0 +1,18 @@
+[package]
+name = "azure_password_sprayer"
+version = "0.1.0"
+edition = "2021"
+authors = ["boring <boringthegod@tutanota.com>"]
+description = "Tool written in Rust to perform Password Spraying attacks against Azure/Office 365 accounts"
+repository = "https://github.com/boringthegod/AzurePasswordSprayer"
+readme = "README.md"
+license = "GPL-3.0-only"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1.7.0", features = ["v4"] }
+clap = { version = "4.5.1", features = ["derive"] }
+colored = "2.0.0"
+chrono = "0.4"
+futures = "0.3"
